@@ -9,8 +9,6 @@ exports.constantList = (req, res, next) => {
 
       res.json(list_const );
     });
-
-  // res.json({ list_const : "Listt"});
 };
 
 exports.createConstant = (req, res, next) => {
@@ -25,10 +23,7 @@ exports.createConstant = (req, res, next) => {
     if (err) {
       next(err);
     }
-    console.log(result);
     res.redirect("/api/constants");
   });
 };
 
-/* 
-.sort({ name: 1 }) */
